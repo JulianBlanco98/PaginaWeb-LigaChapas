@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC/Galería de Imágenes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../CSS/galeria.css" type="text/css">
+    <script src="https://kit.fontawesome.com/b12adba2f5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="titulo">
+            <img src="../Resources/gal_tit.png">
+        </div>
+
+
+        <div class="cabecera">
+
+            <div id="logo">
+                <a href="../index.html"><img src="../Resources/logo2.png" alt="logo de la pagina"></a>
+            </div>
+            <div id="menu">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="informacion.html">Informacion</a></li>
+                    <li class="actividades">
+                        <a class="act" href="actividades.html">Actividades</a>
+                        <ul>
+                            <li><a href="HTML_actividades/clasificacion.html">Clasificación</a></li>
+                            <li><a href="HTML_actividades/equipos.html">Equipos</a></li>
+                            <li><a href="HTML_actividades/noticias.html">Noticias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto/Mapa</a></li>
+                </ul>
+            </div>
+            <div class="barrabusqueda">
+                <div class="cont-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Buscar..." />
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="contenido">
+
+        <div id="ordenar">           
+            <button onclick="ordenarPorClics()" type="button"><i class="fa-solid fa-chart-simple"></i>Más vistos</button>
+            <button onclick="ordenarPorFecha()" type="button"><i class="fa-solid fa-calendar-days"></i>Más Recientes</button>
+        </div>
+        <hr>
+        <div id="galeria">
+            <div id="imagen1Container">
+                <img src="../Resources/Galeria/1.jpg" id="imagen1" alt="Imagen 1">
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha1">Noviembre 10, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+                
+
+            </div>
+            <div id="imagen2Container">
+                <img src="../Resources/Galeria/2.jpg" id="imagen2" alt="Imagen 2">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha2">Noviembre 24, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+            <div id="imagen3Container">
+                <img src="../Resources/Galeria/3.jpg" id="imagen3" alt="Imagen 3">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha3">Septiembre 30, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+            <div id="imagen4Container">
+                <img src="../Resources/Galeria/4.jpg" id="imagen4" alt="Imagen 4">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha4">Agosto 11, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+            <div id="imagen5Container">
+                <img src="../Resources/Galeria/5.jpg" id="imagen5" alt="Imagen 5">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha5">Diciembre 1, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+            <div id="imagen6Container">
+                <img src="../Resources/Galeria/6.jpg" id="imagen6" alt="Imagen 6">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha6">Noviembre 1, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+            <div id="imagen7Container">
+                <img src="../Resources/Galeria/7.jpg" id="imagen7" alt="Imagen 7">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha7">Enero 1, 2024</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+            <div id="imagen8Container">
+                <img src="../Resources/Galeria/8.jpg" id="imagen8" alt="Imagen 8">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha8">Febrero 15, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+            <div id="imagen9Container">
+                <img src="../Resources/Galeria/9.jpg" id="imagen9" alt="Imagen 9">
+                
+                <div class="datos_imagen">
+                    <p class="fecha" id="fecha9">Noviembre 2, 2023</p>
+                    <p id="clicks"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <ul id="imagenList"></ul>
+
+    </div>
+    
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../Resources/logo2.png" alt="Logo Pagina Web">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Página web que contiene toda la información sobre la Liga Española de Chapas.</p>
+                <p>Noticias de última hora, equipos, clasificación... todo se encuentra aquí! </p>
+            </div>
+            <div class="box">
+                <h2>REDES SOCIALES</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/?locale=es_ES" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 - 2023 <b>Julián Blanco González</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="../JS/galeria.js"></script>

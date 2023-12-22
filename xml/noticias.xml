@@ -1,0 +1,80 @@
+<NOTICIAS>
+    <NOTICIA>
+        <IMAGEN>../../Resources/Noticias/noticia1.jpg</IMAGEN>
+        <DATOS>
+            <TITULO>El problema de los pagos de Negreira</TITULO>
+            <CATEGORIA>
+                <IMAGENCATEGORIA>../../Resources/Noticias/icono_cat_equipo.png</IMAGENCATEGORIA>
+                <TIPOCATEGORIA>Equipos</TIPOCATEGORIA>
+            </CATEGORIA>
+            <PUBLICACION>
+                <FECHA>13.11.2023</FECHA>
+                <AUTOR>Juanma Rodríguez</AUTOR>
+            </PUBLICACION>
+            <DESCRIPCION>
+                El FC Barcelona realizó un pago de 641.453€ en 2012 al entonces vicepresidente del Comité Técnico
+                de Árbitros, José María Enríquez Negreira. Justamente ese año se realizó un asesoramiento
+                arbitral que consistía en un informe de dos páginas de extensión repleto de faltas de ortografía.
+            </DESCRIPCION>
+        </DATOS>
+    </NOTICIA>
+    <NOTICIA>
+        <IMAGEN>../../Resources/Noticias/noticia2.jpg</IMAGEN>
+        <DATOS>
+            <TITULO>La chapa más codiciada por los chavales</TITULO>
+            <CATEGORIA>
+                <IMAGENCATEGORIA>../../Resources/Noticias/icono_cat_jugador.png</IMAGENCATEGORIA>
+                <TIPOCATEGORIA>Jugadores</TIPOCATEGORIA>
+            </CATEGORIA>
+            <PUBLICACION>
+                <FECHA>13.11.2023</FECHA>
+                <AUTOR>Josep Pedrerol</AUTOR>
+            </PUBLICACION>
+            <DESCRIPCION>
+                Los buenos números que está cosechando la estrella del Real Madrid están haciendo que todos los
+                chavales se quieran hacer con su chapa.
+            </DESCRIPCION>
+        </DATOS>
+    </NOTICIA>
+    <NOTICIA>
+        <IMAGEN>../../Resources/Noticias/noticia3.jpg</IMAGEN>
+        <DATOS>
+            <TITULO>Nuevo césped artificial</TITULO>
+            <CATEGORIA>
+                <IMAGENCATEGORIA>../../Resources/Noticias/icono_cat_liga.png</IMAGENCATEGORIA>
+                <TIPOCATEGORIA>Liga</TIPOCATEGORIA>
+            </CATEGORIA>
+            <PUBLICACION>
+                <FECHA>16.12.2023</FECHA>
+                <AUTOR>Juan Pedro Blázquez</AUTOR>
+            </PUBLICACION>
+            <DESCRIPCION>
+                El nuevo césped artificial para la liga de chapas ha revolucionado la experiencia de juego,
+                ofreciendo una superficie uniforme y realista que mejora el control del balón. Su innovadora
+                tecnología de fibras garantiza durabilidad y resistencia, brindando un terreno de juego óptimo
+                para los equipos.
+            </DESCRIPCION>
+        </DATOS>
+    </NOTICIA>
+    <NOTICIA>
+        <IMAGEN>../../Resources/Noticias/noticia4.jpg</IMAGEN>
+        <DATOS>
+            <TITULO>Habrá una jornada de liga en día de Reyes</TITULO>
+            <CATEGORIA>
+                <IMAGENCATEGORIA>../../Resources/Noticias/icono_cat_liga.png</IMAGENCATEGORIA>
+                <TIPOCATEGORIA>Liga</TIPOCATEGORIA>
+            </CATEGORIA>
+            <PUBLICACION>
+                <FECHA>15.12.2023</FECHA>
+                <AUTOR>Francisco Hernández</AUTOR>
+            </PUBLICACION>
+            <DESCRIPCION>
+                La Liga de Chapas se prepara para una jornada épica en el Día de Reyes, con enfrentamientos emocionantes
+                que prometen llenar el campo con la magia del fútbol chapas. Los equipos rivalizarán por la victoria en un
+                espectáculo deportivo que añadirá un toque especial a la festividad, creando recuerdos inolvidables para
+                jugadores y seguidores por igual. Esta jornada promete ser un regalo futbolístico para todos los amantes
+                de la Liga de Chapas.
+            </DESCRIPCION>
+        </DATOS>
+    </NOTICIA>
+</NOTICIAS>

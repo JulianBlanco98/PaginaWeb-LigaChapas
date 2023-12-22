@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.cabecera {
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 127, 172, 1) 46%, rgba(0, 212, 255, 1) 100%);
+    /* background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 152, 219, 1) 18%, rgba(0, 212, 255, 1) 100%); */
+    border: solid 2px #464646;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(161, 160, 160, 1) 84%);
+    /* background: rgb(238, 174, 202); */
+    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+    /* border: solid 2px rgb(104, 100, 45); */
+
+
+    height: 127px;
+    padding: 1%;
+
+    position: relative;
+    text-align: center;
+    box-shadow: inset 0px 0px 20px 20px rgb(0 0 0 / 15%);
+}
+
+.titulo img {
+
+    width: auto;
+    height: 100%;
+    /* padding: 1%;
+    box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 35px; */
+
+}
+
+#logo a img {
+    width: 100px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px 9px rgb(255 255 255 / 40%);
+}
+
+
+#menu {
+    font-size: 32px;
+}
+#menu input {
+    display: none;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.2s linear;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    /* Color del texto */
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+}
+
+#menu ul li:hover {
+    background-color: white;
+    border-radius: 6px;
+    border: solid 1px;
+    box-shadow: 0px 8px 17px 0px;
+}
+
+#menu ul .actividades:hover {
+    background-color: white;
+    border-radius: 6px;
+    border: solid 1px;
+    box-shadow: 0px 8px 17px 0px;
+
+
+}
+
+#menu ul li a:hover {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+#menu ul .actividades a:hover {
+    font-weight: bold;
+    color: #2980b9;
+
+}
+
+#menu ul ul {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2980b9;
+    /* Color de fondo del submenú */
+    border-top: 2px solid #2c3e50;
+    /* Color del borde superior del submenú */
+}
+
+#menu ul ul li {
+    display: block;
+}
+
+#menu ul li:hover>ul {
+    display: inherit;
+
+}
+
+/* #menu ul li a:hover */
+#menu ul ul li:hover {
+    background-color: white;
+    border-radius: 6px;
+    border: solid 1px;
+    box-shadow: 0px 8px 17px 0px;
+}
+
+#menu ul ul a {
+    color: #000
+        /* Color del texto del submenú */
+}
+
+#menu ul ul a:hover {
+    font-weight: bold;
+    color: #2980b9;
+    /* Color al pasar el ratón sobre el submenú */
+}
+
+#menu ul .actividades a {
+    color: white;
+}
+
+#menu ul .actividades a:hover {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/*Mantener el hover de actividades activado*/
+#menu ul li:hover>a.act {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.barrabusqueda .cont-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.cont-1 input#search {
+    height: 49px;
+    background: #2b303b;
+    border: 2px solid white;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+
+.cont-1 input#search::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.cont-1 input#search:hover::placeholder {
+    color: #161616;
+    /* Estilo del placeholder cuando se realiza hover */
+}
+
+.cont-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 15px;
+    z-index: 1;
+    color: #03d1fc;
+}
+
+.cont-1 input#search:hover,
+.cont-1 input#search:focus,
+.cont-1 input#search:active {
+    outline: none;
+    background: #ffffff;
+}
+
+
+
+#menu_equipos {
+    background-color: #333;
+    /* Color de fondo del menú */
+    padding: 10px;
+    
+    /* Espaciado interno del contenedor del menú */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#menu_equipos label,
+#menu_equipos input {
+    display: none;
+}
+
+#menu_equipos nav ul {
+    list-style-type: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 15px;
+    justify-content: center;
+}
+
+#menu_equipos nav li {
+    display: inline;
+    /* Muestra los elementos de la lista en línea */
+    margin-right: 20px;
+    /* Espaciado entre elementos de la lista */
+}
+
+#menu_equipos nav a {
+    text-decoration: none;
+    /* Elimina el subrayado predeterminado de los enlaces */
+    color: #fff;
+    /* Color del texto del enlace */
+    font-weight: bold;
+    /* Establece el peso de la fuente como negrita */
+}
+
+#menu_equipos nav a:hover {
+    color: #ffd700;
+    /* Cambia el color del texto al pasar el mouse sobre el enlace */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+}
+
+/* Estilo para los div con la clase "equipos" */
+.equipos {
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el ancho total */
+    display: flex;
+    margin: 1%;
+    box-shadow: 0px 7px 20px 0;
+
+
+}
+
+.equipos #imagen_izquierda {
+
+    width: 40%;
+    /* background-color: blue; */
+    box-sizing: border-box;
+
+    /* background-image: linear-gradient(to right, #141e30, #243b55); */
+    background-image: linear-gradient(to right, #4b5b74, #6c85a6);
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: linear-gradient(to right, #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%); */
+    padding: 1%;
+    /* background: linear-gradient(to bottom, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); */
+}
+
+.equipos #imagen_izquierda img {
+
+    height: 322px;
+    width: 50%;
+    /* height: 60%; */
+    object-fit: contain;
+    border: 2px solid;
+    border-radius: 30px;
+    border-color: azure;
+    padding: 2%;
+    box-shadow: 0px 0px 20px 1px rgb(255 255 255 / 60%);
+    mix-blend-mode: hard-light;
+}
+
+.equipos #imagen_izquierda h2 {
+    text-align: left;
+    font-family: Arial;
+    font-size: 36px;
+    color: rgb(255 255 255);
+    text-shadow: rgb(0 0 0) 0px 0px 9px;
+}
+
+.equipos .datos {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: 80%;
+    box-sizing: border-box;
+    border-left: 100px solid #6c85a6;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap: 2px; */
+    /* Espacio entre las columnas */
+}
+
+
+.equipos .datos .data {
+    /* margin: 15px; */
+    /* font-family: cursive; */
+    font-size: 19px;
+    border: 1px solid #0000002e;
+    box-shadow: 0px 0px 11px 2px #48464652;
+    border-radius: 8px;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.equipos .datos .data p,
+.equipos .datos .data a {
+    margin-left: 30px;
+}
+
+.equipos .datos .data img {
+    width: 50px;
+}
+
+
+.equipos .datos .data a {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+.equipos .datos .data a:hover {
+    text-decoration: underline;
+}
+
+.data:last-child {
+    grid-column: span 2;
+
+
+}
+
+.data:last-child .mapa {
+    width: 50px !important;
+    /* Hace que el último elemento ocupe las dos columnas */
+}
+
+.mapa_google {
+    position: relative;
+    width: 100%;
+    max-width: 96%;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    border-radius: 6px;
+}
+
+/* Estilo del footer */
+/* Estilos generales para el footer */
+
+
+/*:::::Pie de Pagina*/
+.pie-pagina {
+    width: 100%;
+    background-color: #14284f;
+    font-family: Roboto;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    justify-items: start;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 20px 1px rgb(255 255 255 / 60%);
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+/* .pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+} */
+.pie-pagina .fa-facebook:hover {
+    color: #1877f2 !important;
+    /* Cambia el color al pasar el ratón sobre Facebook */
+}
+
+
+
+.pie-pagina .fa-instagram:hover {
+    color: #bc2a8d !important;
+    /* Cambia el color al pasar el ratón sobre Instagram */
+}
+
+.pie-pagina .fa-twitter:hover {
+    color: #1da1f2 !important;
+    /* Cambia el color al pasar el ratón sobre Twitter */
+}
+
+.pie-pagina .fa-youtube:hover {
+    color: #c4302b !important;
+    /* Cambia el color al pasar el ratón sobre YouTube */
+}
+
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+#scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    color: white;
+    background: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 400ms ease;
+    display: none;
+}
+
+#scroll-up:hover {
+    background: white;
+    color: black;
+}
+#menu_equipos hr {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+    
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .titulo {
+        height: 100px;
+    }
+
+    .titulo img {
+        width: 250px;
+        object-fit: contain;
+    }
+
+    .barrabusqueda {
+        position: absolute;
+        top: 139px;
+        left: 110px;
+        z-index: 5;
+    }
+    .cont-1 input#search {
+        font-size: 9pt;
+        width: 172px;
+    }
+
+    .cabecera {
+        flex-direction: row-reverse;
+    }
+
+    #menu {
+        display: block;
+        position: relative;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menu ul li {
+        display: block;
+        position: relative;
+        margin: 5px 0;
+    }
+
+    #menu ul li a {
+        display: block;
+        padding: 5px 10px;
+        color: #fff;
+        /* Color del texto */
+        text-decoration: none;
+    }
+
+    #menu ul ul {
+        top: 100%;
+        left: 372px;
+        padding: 0;
+        margin: 0;
+        font-size: 24px;
+        width: auto;
+    }
+   
+
+    #menu .act {
+        pointer-events: none;
+    }
+
+    #menu input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: relative;
+        top: 15px;
+        left: 15px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        z-index: 2;
+        /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    #menu span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        top: -12px;
+        left: 19px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menu span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menu span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /*
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+    #menu input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #dfdfdf;
+    }
+
+    /*
+     * But let's hide the middle one.
+     */
+    #menu input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+     * Ohyeah and the last one should go the other direction
+     */
+    #menu input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu input:checked~ul {
+        transform: none;
+    }
+   
+
+    #menu ul {
+        position: absolute;
+        width: 370px;
+        margin: -83px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        /* background: #ededed; */
+        border: solid 2px #464646;
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 127, 172, 1) 46%, rgba(0, 212, 255, 1) 100%);
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    
+    #logo {
+        z-index: 5;
+    }
+    #logo a img {
+        
+        box-shadow: 0 0 0 0;
+    }
+    #menu ul .actividades a:hover {
+        font-weight: bold;
+        color: #2980b9;
+    
+    }
+
+    .equipos {
+        flex-direction: column;
+        margin: 30px 2%;
+
+    }
+
+    .equipos #imagen_izquierda {
+        width: 100%;
+        padding: 4%;
+    }
+
+    .equipos .datos {
+        width: 100%;
+        box-sizing: border-box;
+        border-left: 0;
+
+    }
+
+    .equipos .datos .data {
+        font-size: 15px;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipos #imagen_izquierda img {
+        height: 128px;
+        width: 40%;
+        mix-blend-mode: normal;
+    }
+
+    .equipos #imagen_izquierda h2 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .equipos .datos .data p,
+    .equipos .datos .data a {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .equipos .datos .data img {
+        width: 40px;
+
+    }
+
+    #scroll-up {
+        bottom: 40px;
+    }
+
+    #menu_equipos nav ul {
+        display: none;
+        
+        /* Oculta la lista de enlaces */
+    }
+
+    #menu_equipos .menu_btn {
+        display: block;
+        /* Muestra el botón de hamburguesa */
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        
+
+    }
+
+    #menu_equipos input[type="checkbox"] {
+        display: none;
+        /* Oculta el input checkbox */
+    }
+
+    #menu_equipos input[type="checkbox"]:checked~nav ul {
+        /* Muestra la lista de enlaces cuando el checkbox está marcado */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        align-items: center;
+        font-size: 13px;
+        justify-items: center;
+        
+        
+        
+    }
+
+    #menu_equipos input[type="checkbox"]:not(:checked)~nav ul {
+        display: none;
+        /* Oculta la lista de enlaces cuando el checkbox no está marcado */
+    }
+    #menu_equipos nav li {
+        margin-right: 0;
+    }
+    #menu_equipos input[type="checkbox"]:checked~nav hr {
+        /* Aplica estilos a la etiqueta <hr> cuando el checkbox está marcado */
+        display: block;
+        margin: 10px 0;
+        
+    }
+
+    
+
+}

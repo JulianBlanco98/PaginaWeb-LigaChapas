@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC/Informacion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../CSS/informacion.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <div class="titulo">
+            <img src="../Resources/inf_tit.png">
+        </div>
+
+
+        <div class="cabecera">
+
+            <div id="logo">
+                <a href="../index.html"><img src="../Resources/logo2.png" alt="logo de la pagina"></a>
+            </div>
+            <div id="menu">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul>
+                    <li><a href="informacion.html">Informacion</a></li>
+                    <li class="actividades">
+                        <a class="act" href="actividades.html">Actividades</a>
+                        <ul>
+                            <li><a href="HTML_actividades/clasificacion.html">Clasificación</a></li>
+                            <li><a href="HTML_actividades/equipos.html">Equipos</a></li>
+                            <li><a href="HTML_actividades/noticias.html">Noticias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto/Mapa</a></li>
+                </ul>
+            </div>
+            
+            <div class="barrabusqueda">
+                <div class="cont-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Buscar..." />
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="contenido">
+
+        <section id="actividades">
+            <div class="datos">
+
+                <h2>Actividades</h2>
+                <p>Muestra la principal información relacionada con la Liga Española de Chapas</p>
+                <div class="subdatos">
+                    <div class="sub">
+                        <h3>Equipos</h3>
+                        <p>Conoce a los equipos participantes en la liga, sus nombres, colores y jugadores destacados.
+                        </p>
+                        <!-- <p><a href="HTML_actividades/equipos.html">Visitar los equipos</a></p> -->
+                        
+                    </div>
+                    <div class="sub">
+
+                        <h3>Clasificación</h3>
+                        <p>Consulta la tabla de clasificación actualizada para ver la posición de cada equipo en la
+                            liga, sus
+                            puntos y diferencias de goles.</p>
+                        <!-- <p><a href="HTML_actividades/clasificacion.html">Visitar la clasificación</a></p> -->
+                    </div>
+                    <div class="sub">
+
+                        <h3>Noticias</h3>
+                        <p>Mantente al tanto de las últimas noticias y novedades de la Liga Española de Chapas, como
+                            resultados
+                            de partidos, fichajes y eventos especiales.</p>
+                        <!-- <p><a href="HTML_actividades/noticias.html">Visitar las Noticias</a></p> -->
+                    </div>
+                    <div class="botones">
+                        <button class="boton2" onclick="window.location.href='HTML_actividades/equipos.html'">Equipos</button>
+                        <button class="boton2" onclick="window.location.href='HTML_actividades/clasificacion.html'">Clasificacion</button>
+                        <button class="boton2" onclick="window.location.href='HTML_actividades/noticias.html'">Noticias</button>
+                    </div>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="../Resources/tarjeta_Actividades.png">
+            </div>
+        </section>
+
+        
+
+        <section id="tienda">
+            <div class="datos">
+                <h2>Tienda</h2>
+                <p>Descubre nuestra tienda oficial, donde encontrarás productos relacionados con la Liga Española de
+                    Chapas, como chapas personalizadas, camisetas y accesorios.</p>
+                <!-- <p><a href="tienda.html">Visitar la tienda</a></p> -->
+                <button class="boton1" onclick="window.location.href='tienda.html'">Visitar la tienda</button>
+            </div>
+            <div class="imagen">
+                <img src="../Resources/tarjeta_tienda.png">
+            </div>
+        </section>
+
+
+        <section id="galeria">
+            <div class="datos">
+
+                <h2>Galería</h2>
+                <p>Explora nuestra galería de imágenes y fotos de partidos, jugadores destacados y momentos
+                    emocionantes
+                    de la liga.</p>
+                <!-- <p><a href="galeria.html">Visitar la galería</a></p> -->
+                <button class="boton1" onclick="window.location.href='galeria.html'">Visitar la galería</button>
+
+            </div>
+            <div class="imagen">
+                <img src="../Resources/tarjeta_galeria.png">
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="datos">
+                <h2>Contacto</h2>
+                <p>Si tienes preguntas o sugerencias, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+                <p>Correo electrónico: contacto@liga-de-chapas.es</p>
+                <p>Teléfono: +34 123 456 789</p>
+                <!-- <p><a href="contacto.html">Contacto</a></p> -->
+                <button class="boton1" onclick="window.location.href='contacto.html'">Contacto</button>
+
+
+            </div>
+            <div class="imagen">
+                <img src="../Resources/tarjeta_contacto.png">
+            </div>
+        </section>
+    </div>
+
+
+
+
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="../index.html">
+                        <img src="../Resources/logo2.png" alt="Logo Pagina Web">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Página web que contiene toda la información sobre la Liga Española de Chapas.</p>
+                <p>Noticias de última hora, equipos, clasificación... todo se encuentra aquí! </p>
+            </div>
+            <div class="box">
+                <h2>REDES SOCIALES</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/?locale=es_ES" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 - 2023 <b>Julián Blanco González</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
