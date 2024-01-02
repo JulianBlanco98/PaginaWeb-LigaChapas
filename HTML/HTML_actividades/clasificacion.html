@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../../CSS/clasificacion.css" type="text/css">
     <link rel="icon" type="image/vnd.icon" href="../../Resources/logo2.ico">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 
 </head>
 
@@ -55,7 +57,25 @@
 
     <div class="contenido">
         <script src="../../JS/clasificacionAPI.js"></script>
-        <table>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Puesto</th>
+                    <th>Nombre</th>
+                    <th>Escudo</th>
+                    <th>Puntos</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PE</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>DG</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <!-- <table>
             <tbody>
                 <tr>
                     <th>Puesto</th>
@@ -350,7 +370,7 @@
                     <td>-13</td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
         <div class="informacion">
             <div class="datos">
                 <div class="cuadrado1"></div>
