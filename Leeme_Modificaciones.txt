@@ -1,0 +1,3 @@
+He incluido una API para cargar los datos de la clasificación actual de la liga --> Clasificacion.html
+He añadido favicon a todas las paginas
+He optimizado el código
