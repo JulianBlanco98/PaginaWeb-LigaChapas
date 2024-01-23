@@ -9,6 +9,7 @@ function Map123() {
 
 // script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=Map123">
 var script = document.createElement('script');
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=Map123';
+//script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=Map123';
+script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCoh4omTOG3AtkMSqJl0xxDOaRah1rPjvs&callback=Map123';
 script.defer = true;
 document.head.appendChild(script);
