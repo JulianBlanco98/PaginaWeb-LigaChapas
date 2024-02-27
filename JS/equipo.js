@@ -42,10 +42,10 @@ function crearMapas() {
 
 
 
-// src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=crearMapas"></script>
+
 var script = document.createElement('script');
 // script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBgT65-vVzSEhKlnZKQOTKw4gRnf9nv-JI&callback=crearMapas';
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCoh4omTOG3AtkMSqJl0xxDOaRah1rPjvs&callback=crearMapas';
+//aquí iría la api buena
 script.defer = true;
 document.head.appendChild(script);
 
