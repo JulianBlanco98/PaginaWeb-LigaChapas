@@ -1,8 +1,8 @@
-const apiKey = 'd57c379060684b589b6e000b0ff8bb79'; // apiKey
+const apiKey = ; // apiKey
 const url = 'https://api.football-data.org/v4/competitions/PD/standings';
 
 const headers = {
-    'X-Auth-Token': 'd57c379060684b589b6e000b0ff8bb79',
+    'X-Auth-Token': 'api aqui',
 };
 
 $.ajax({
@@ -61,13 +61,13 @@ function rellenarTabla(result) {
     }
 }
 
-/*const apiKey = 'd57c379060684b589b6e000b0ff8bb79'; // apiKey
+/*const apiKey = ''; // apiKey
 const url = 'http://api.football-data.org/v4/competitions/PD/standings';
 
 const options = {
     method: 'GET',
     headers: {
-        'X-Auth-Token': 'd57c379060684b589b6e000b0ff8bb79',
+        'X-Auth-Token': '',
         'Access-Control-Allow-Methods': 'GET',
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'x-auth-token, x-response-control',
@@ -91,7 +91,7 @@ const url = 'https://api-football-v1.p.rapidapi.com/v3/timezone';
 const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': 'e84baa8dc6mshb0ad7cf505013e0p12ef72jsna98fcb32705d',
+        'X-RapidAPI-Key': '',
         'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
     }
 };
@@ -109,7 +109,7 @@ const options = {
 /*const resquest = fetch(url, {
     method: "GET",
     headers: {
-        'X-Auth-Token': 'd57c379060684b589b6e000b0ff8bb79',
+        'X-Auth-Token': '',
         'Content-Type': "application/json",
     },
 })
