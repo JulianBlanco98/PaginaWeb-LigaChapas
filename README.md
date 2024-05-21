@@ -36,3 +36,30 @@ En mi caso, yo hice que la liga de chapas fuera como la Primera División Españ
 - **Noticias**: selector de noticias por categoría.
 
 ## Capturas del proyecto de los diferentes apartados
+
+### Pantalla Principal
+![screenshot](Principal.png)
+
+### Información
+![screenshot](Informacion.png)
+
+### Actividades
+![screenshot](Actividades.png)
+
+### Actividades/Clasificación
+![screenshot](Clasificacion.png)
+
+### Actividades/Equipos
+![screenshot](Equipos.png)
+
+### Actividades/Noticias
+![screenshot](Noticias.png)
+
+### Tienda
+![screenshot](Tienda.png)
+
+### Galería
+![screenshot](Galeria.png)
+
+### Contacto_Mapa
+![screenshot](Contacto.png)
